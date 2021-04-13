@@ -292,6 +292,22 @@ main #ourservices article>div .fas{
     transform: rotateY(180deg);
 }
 /* final our services */
+/*inicio about us*/
+
+main section:last-child{
+    padding-bottom: 90px;
+}
+
+main section h4{
+    margin: var(--margingrid) 0;
+    color: var(--color-principal);
+}
+
+main section .flex{
+    display: flex;
+    flex-direction: column;
+}
+/*final about us*/
 /* mediaqueries */
 
 @media(min-width:600px){
@@ -306,6 +322,13 @@ main #ourservices .grid article{
     border-left: 1px solid #aaa;
     padding: 1.5em;
     }
+    main section .flex{
+       flex-direction: row;
+    }
+    main section .flex .columna{
+        margin: 0 var(--margingrid);
+    }
+
 }
 
 @media(min-width:768px){
