@@ -1,0 +1,75 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+/* 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+html{
+    /* para generar barra lateral entre puntos de ancla */
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    /* defino variables que se vana repetir en mi codigo */
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+--fuente-principal:'Montserrat', sans-serif; 
+--fuente-secundaria:'Handlee', cursive;
+--fontsize: 1em;
+--anchomaximo: 68.750em;
+--margingrid: 1em;
+--padding: 0.625em
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main{ background-color: var(--color-secundario);}
+
+main p{
+    color: #666;
+    line-height: 1.25em;
+}
+
+body{
+    font-family: var(--fuente-principal);
+    font-size: var(--fontsize);
+}
+
+.container{
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+main section div h2 {
+    color: white;
+}
+
+main nav div ul li{
+    color: white;
+    text-decoration: none;
+}
+
+.pestañamenu {color: white;}
+.pestañamenu p{color: white;}
+.comida {
+    color: white;
+    padding: var(--padding);
+}
+main nav ul li{color: white;
+text-decoration: none;}
+.botonmenu{ background-color: var(--color-principal);
+    color: white;
+    display: inline-block;
+    padding: 1.15em;
+    margin: var(--margingrid) 0px;
+    text-decoration: none;
+    border: 1px solid var(--color-principal);}
