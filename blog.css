@@ -57,11 +57,18 @@ padding-top: var(--padding);}
 
 @media(min-width:600px){
 
-    main .blog {
-        grid-template-columns: 2, 1fr;
+    main .blog{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto 50vh;
     }
-main .blog .food{
-    grid-column: 1/2;
+
 }
+
+@media(min-width:768px){
+
+    main .blog{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto 50vh;
+    }
 
 }
