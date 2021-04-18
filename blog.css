@@ -1,51 +1,4 @@
-@import url(./reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
-/* 
-font-family: 'Handlee', cursive;
-font-family: 'Montserrat', sans-serif; 
-*/
-
-html{
-    /* para generar barra lateral entre puntos de ancla */
-    scroll-behavior: smooth;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-:root{
-    /* defino variables que se vana repetir en mi codigo */
-    --color-principal: #fa573a;
-    --color-secundario: #21242e;
---fuente-principal:'Montserrat', sans-serif; 
---fuente-secundaria:'Handlee', cursive;
---fontsize: 1em;
---anchomaximo: 68.750em;
---margingrid: 1em;
---padding: 0.625em
-}
-
-img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-main p{
-    color: #666;
-    line-height: 1.25em;
-}
-
-body{
-    font-family: var(--fuente-principal);
-    font-size: var(--fontsize);
-}
-
-.container{
-    max-width: var(--anchomaximo);
-    margin: 0 auto;
-}
+/*Inicio Blog*/
 
 main .blog{
     display: grid;
@@ -63,12 +16,4 @@ padding-top: var(--padding);}
     }
 
 }
-
-@media(min-width:1004px){
-
-    main .blog{
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: auto 50vh;
-    }
-
-}
+/*Final blog*/
