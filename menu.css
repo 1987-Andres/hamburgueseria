@@ -49,27 +49,105 @@ body{
     margin: 0 auto;
 }
 
-main section div h2 {
+h2 {
     color: white;
 }
 
-main nav div ul li{
+main section .container h2{
     color: white;
+}
+
+main section div h3 {
+    color: white;
+}
+
+main section div h3 span {
+    color: var(--color-principal);
+}
+
+main article {
+    margin-top: 5em;
+}
+
+main article .underline2{
+    position: relative;
+    width: 4em;
+color: var(--color-principal);
+text-align: left;
+margin-bottom: var(--margingrid);
+}
+
+main article .underline2 hr{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-principal);
+}
+
+
+div nav ul{
+    width: 100%;
+}
+
+div nav .menu2 li a{
+    display: block;
+    width: 100%;
     text-decoration: none;
+    padding: calc(var(--padding)*1.5);
+    color: white;
+
+}
+
+div nav .menu2 li:last-child a{
+    border-bottom: none;
+}
+
+div nav .menu2 li .activo, 
+div nav .menu2 li a:hover{
+    color: white;
+    background-color: var(--color-principal);
 }
 
 .pestañamenu {color: white;}
+
 .pestañamenu p{color: white;}
+
 .comida {
     color: white;
     padding: var(--padding);
 }
+
 main nav ul li{color: white;
 text-decoration: none;}
-.botonmenu{ background-color: var(--color-principal);
-    color: white;
+
+.botonmenu{ 
+    color: var(--color-principal);
     display: inline-block;
     padding: 1.15em;
     margin: var(--margingrid) 0px;
     text-decoration: none;
-    border: 1px solid var(--color-principal);}
+    
+   }
+
+.botonmenu i{
+    transition: 0.5s;
+}
+
+.botonmenu:hover i{
+    transform: translateX(5px);}
+
+    @media(min-width:600px){
+        div nav .menu2 li a{
+            width: 33%;
+        }
+    
+        main article {
+            width: 33%;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    }
