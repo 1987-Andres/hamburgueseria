@@ -53,40 +53,36 @@ h2 {
     color: white;
 }
 
-main section .container h2{
-    color: white;
+main article h3{
+    color: white; 
+    font-weight: bold; 
 }
 
-main section div h3 {
-    color: white;
-}
-
-main section div h3 span {
+main article h3 span{
     color: var(--color-principal);
 }
 
-main article {
-    margin-top: 5em;
-}
+main article p{color: white;}
 
-main article .underline2{
+main section .underline{
     position: relative;
-    width: 4em;
+    width: 6.250em;
+    margin: 0 auto;
 color: var(--color-principal);
-text-align: left;
-margin-bottom: var(--margingrid);
+font-weight: 700;
+text-align: center;
+margin-bottom: calc(var(--margingrid) *2);
 }
 
-main article .underline2 hr{
+main section .underline hr{
     position: absolute;
     width: 100%;
     top: -1px;
     border-color: var(--color-principal);
 }
 
-
-div nav ul{
-    width: 100%;
+main section .container h2{
+    color: white;
 }
 
 div nav .menu2 li a{
@@ -107,10 +103,6 @@ div nav .menu2 li a:hover{
     color: white;
     background-color: var(--color-principal);
 }
-
-.pestañamenu {color: white;}
-
-.pestañamenu p{color: white;}
 
 .comida {
     color: white;
@@ -136,18 +128,13 @@ text-decoration: none;}
 .botonmenu:hover i{
     transform: translateX(5px);}
 
-    @media(min-width:600px){
-        div nav .menu2 li a{
-            width: 33%;
-        }
+    @media(min-width:768px){
     
-        main article {
-            width: 33%;
-        }
 
-        .container{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+    }
+
+    
+    @media(min-width:1004px){
+    
 
     }

@@ -55,7 +55,7 @@ main .blog{
 padding-top: var(--padding);}
 .blog h3 {color: var(--color-principal)}
 
-@media(min-width:600px){
+@media(min-width:768px){
 
     main .blog{
         grid-template-columns: 50% 50%;
@@ -64,7 +64,7 @@ padding-top: var(--padding);}
 
 }
 
-@media(min-width:768px){
+@media(min-width:1004px){
 
     main .blog{
         grid-template-columns: 33% 33% 33%;
