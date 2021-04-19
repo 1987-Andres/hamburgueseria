@@ -330,6 +330,16 @@ main .imagen:hover .marco img{
     transform: rotateZ(0deg);
 }
 /*final about us*/
+/*Inicio Blog*/
+
+main .blog{
+    display: grid;
+}
+
+.blog h2 {font-size: 2em;
+padding-top: var(--padding);}
+.blog h3 {color: var(--color-principal)}
+/*Final blog*/
 /* mediaqueries */
 
 @media(min-width:600px){
@@ -369,6 +379,10 @@ main #ourservices .grid article{
     main #ourservices .grid article:last-child{
         grid-column: 3/4;
     }
+    main .blog{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto 50vh;
+    }
 }
 
 @media(min-width:1004px){
@@ -387,5 +401,9 @@ main #ourservices .grid article{
         }
         header{
             box-shadow: 0px 1px 5px grey;
+        }
+        main .blog{
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: auto 50vh;
         }
 }

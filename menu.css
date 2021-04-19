@@ -1,0 +1,173 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+/* 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+html{
+    /* para generar barra lateral entre puntos de ancla */
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    /* defino variables que se vana repetir en mi codigo */
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+--fuente-principal:'Montserrat', sans-serif; 
+--fuente-secundaria:'Handlee', cursive;
+--fontsize: 1em;
+--anchomaximo: 68.750em;
+--margingrid: 1em;
+--padding: 0.625em
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main{ background-color: var(--color-secundario);}
+
+main p{
+    color: #666;
+    line-height: 1.25em;
+}
+
+body{
+    font-family: var(--fuente-principal);
+    font-size: var(--fontsize);
+}
+
+.container{
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+}
+
+main article h3{
+    color: white; 
+    font-weight: bold; 
+}
+
+main article h3 span{
+    color: var(--color-principal);
+}
+
+main article p{color: white;}
+
+
+main section .underline{
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+color: var(--color-principal);
+font-weight: 700;
+text-align: center;
+margin-bottom: calc(var(--margingrid) *2);
+}
+
+main section .underline hr{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-principal);
+}
+
+    
+main section .underline2{
+    position: absolute;
+    width: 4em;
+color: var(--color-principal);
+}
+
+main section .underline2 hr{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-principal);
+}
+
+main section .container h2{
+    color: white;
+    font-size: var(--fontsize);
+    padding-top: 20px;
+    font-weight: bold;
+    font-family: var(--fuente-principal);
+}
+
+main section .todays h2{text-align: left;}
+
+main section .todays p{
+    padding-top: var(--padding);
+}
+
+div nav .menu2 li a{
+    display: grid;
+    width: 100%;
+    text-decoration: none;
+    padding: calc(var(--padding)*1.5);
+    color: white;
+
+}
+
+div nav .menu2 li:last-child a{
+    border-bottom: none;
+}
+
+div nav .menu2 li .activo, 
+div nav .menu2 li a:hover{
+    color: white;
+    background-color: var(--color-principal);
+}
+
+.comida {
+    color: white;
+    padding: var(--padding);
+}
+
+main nav ul li{color: white;
+text-decoration: none;}
+
+.botonmenu{ 
+    color: var(--color-principal);
+    display: inline-block;
+    padding: 1.15em;
+    margin: var(--margingrid) 0px;
+    text-decoration: none;
+    
+   }
+
+.botonmenu i{
+    transition: 0.5s;
+}
+
+.botonmenu:hover i{
+    transform: translateX(5px);}
+
+    @media(min-width:1004px){
+        main section .menuizquierda{  display: grid; grid-template-columns: 1fr 1fr;}
+    }
+    main section .menu2 {
+        grid-column: 2/3;
+    }
+
+    main section .productos {
+        grid-column: 2/3;
+    }
+    main section .todays {
+        grid-column: 1/2
+    }
+    
+  
+        
+
+    
